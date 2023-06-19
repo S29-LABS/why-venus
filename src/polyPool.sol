@@ -5,13 +5,6 @@ import "./interfaces/IERC20.sol";
 
 
 contract POLYPool {
-
-    address public factory;
-    address public tokenA; // deposit token for buy pool
-    address public tokenB; // deposit token for sell pool
-    address public nonfungibletoken;
-
-    
     /// @dev there are 3 types of pools in this protocol, buyPool, sellPool and tradePool
     ///      for emphasis tradePool = buyPool & sellPool
     struct PoolType {
@@ -20,6 +13,13 @@ contract POLYPool {
     }
 
     PoolType public poolType;
+    address public factory;
+    address public tokenA; // deposit token for buy pool
+    address public tokenB; // deposit token for sell pool
+    address public nft;
+
+    
+
 
     bool isSinglePool = poolType.buyPool & poolType.sellPool == 0;
 
@@ -75,6 +75,8 @@ contract POLYPool {
 
          return abi.decode(data, (uint256));
     }
+
+
     // a)
     // buyPool || sellPool || both
     // a user deposit 
