@@ -10,4 +10,6 @@
 
 <h1>Defination</h1>
 
-An automated market maker (AMM) protocol that facilitates both ERC20-to-ERC20 swaps and NFT-to-ERC20 swaps (and vice versa), leveraging the use of a bonding curve. ERC721 NFTs, ETH and all ERC20 tokens are supported. 
+<br/>
+
+<p> why-venus is an automated market maker (AMM) protocol that facilitates both ERC20-to-ERC20 swaps and NFT-to-ERC20 swaps (and vice versa). It leverages the use of a bonding curve, and supports ERC721 NFTs, ETH and all ERC20 token types. </p> 
